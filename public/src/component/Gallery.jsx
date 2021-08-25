@@ -27,18 +27,13 @@ let Gallery = ({query}) => {
         });
     }, []);
 
-
-    useEffect(() => {
-        async function fetchData() {
-            if(query.trim() ===""){
-                 return;
-                 }
-          const data= await SearchImages(query);
-          
-          setImgList(data);
+    useEffect(async() =>{
+        if(query.trim() ===""){
+            return;
         }
-        fetchData();
-      }, [query]);
+        const data= await SearchImages(query);
+        setImgList(data);
+    }, [query]);
 
     return(
         <>
