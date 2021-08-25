@@ -1,0 +1,15 @@
+*{
+  font-family: poppins;
+}
+.form-control:focus{
+  border:  2px solid dodgerblue;
+}
+.Img{
+  margin: 4px;
+  cursor: pointer;
+}
+.preview{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
